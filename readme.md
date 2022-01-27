@@ -54,10 +54,7 @@ firebase init hosting
 > Configure as a single-page app (rewrite all URLs to /index.html)? N   
 > Set up automatic builds and deploys with GitHub? N   
 
-
-To deploy inside the firebase-paypal directory
-
-Please make sure that the firebase.json file look like this
+After doing `firebase init hosting`, please make sure that the firebase.json file look like this
 
 ```json
 {
@@ -80,6 +77,9 @@ Please make sure that the firebase.json file look like this
   }
 }
 ```
+
+
+To deploy inside the firebase-paypal directory
 
 ```sh
 firebase deploy
