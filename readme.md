@@ -57,6 +57,30 @@ firebase init hosting
 
 To deploy inside the firebase-paypal directory
 
+Please make sure that the firebase.json file look like this
+
+```json
+{
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "app"
+      }
+    ]
+  }
+}
+```
+
 ```sh
 firebase deploy
 ```
